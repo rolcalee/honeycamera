@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoBooth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="photobooth">
+        <div class="camera-container">
+            <video id="camera" autoplay></video>
+            <div id="camera-message">Please allow camera access</div>
+            <div id="countdown"></div>
+        </div>
+
+        <br>
+
+        <div id="controls">
+            <div id="filter-selection" class="selection-group">
+                
+                <button data-filter="none" class="selected">No Filter</button>
+                <button data-filter="sepia">Sepia</button>
+                <button data-filter="grayscale">Black & White</button>
+                <button data-filter="contrast">High Contrast</button>
+            </div>
+        
+            <div id="frame-selection" class="selection-group">
+                <button data-frame="1" class="selected">1 Photo</button>
+                <button data-frame="3">3 Photos</button>
+                <button data-frame="6">6 Photos</button>
+            </div>
+            
+            <br>
+            <center>
+            <button id="start">Start A Taking Picture!</button>
+            <button id="stop" class="hidden">Stop</button>
+        </center>
+        </div>
+
+        <div class="frames" id="photo-frame"></div>
+
+        <div id="download-buttons" class="hidden">
+            <button id="download-frame">Download Frame</button>
+            <button id="download-all">Download All Photos</button>
+        </div>
+    </div>
+
+    <p><a href="index.html">Honey Camera.</a></p>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
