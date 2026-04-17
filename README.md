@@ -1,0 +1,3 @@
+--- Hi! This is just a personal project where I want to create a web-based Photobooth.
+-- I created this when I was a second-year student for a project.
+- Hope you like it!
